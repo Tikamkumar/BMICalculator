@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/llMain"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical">
+
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Fill All the Details..."
+         android:textStyle="bold"
+         android:textSize="22sp"
+         android:layout_marginTop="30dp"/>
+
+
+     <EditText
+         android:id="@+id/edtWeight"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:padding="15dp"
+         android:layout_marginTop="30dp"
+         android:background="@drawable/edtbackground"
+         android:hint="@string/hint_wt"
+         android:inputType="number" />
+
+     <EditText
+         android:id="@+id/edtHeightFt"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:padding="15dp"
+         android:layout_marginTop="16dp"
+         android:hint="@string/hint_hft"
+         android:background="@drawable/edtbackground"
+         android:inputType="number" />
+
+     <EditText
+         android:id="@+id/edtHeightInch"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:padding="15dp"
+         android:layout_marginTop="16dp"
+         android:background="@drawable/edtbackground"
+         android:hint="@string/hint_htI"
+         android:inputType="number" />
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+         <Button
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:layout_weight="1"
+             android:text="Calculate BMI"
+             android:id="@+id/btnCalculate"
+             android:padding="10dp"
+             android:textSize="16sp"
+             android:layout_marginTop="20dp"/>
+
+         <Space
+             android:layout_width="10dp"
+             android:layout_height="wrap_content"/>
+
+         <Button
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:layout_weight="1"
+             android:text="Reset"
+             android:id="@+id/resetBtn"
+             android:padding="10dp"
+             android:textSize="16sp"
+             android:layout_marginTop="20dp"/>
+
+     </LinearLayout>
+
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/txtResult"
+         android:text="Result"
+         android:padding="12dp"
+         android:textAlignment="center"
+         android:layout_gravity="center"
+         android:textSize="25sp"
+         android:background="#e2e2e2"
+         android:textStyle="bold"
+         android:layout_marginTop="30dp"/>
+
+
+ </LinearLayout>
+
+
+</ScrollView>
